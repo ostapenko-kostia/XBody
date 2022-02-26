@@ -179,6 +179,7 @@ header .container {
 
 .intro {
 	background: url('../imgs/intro-bg.png') no-repeat top / cover;
+	margin-bottom: 40px;
 }
 
 .intro-description {
@@ -253,10 +254,6 @@ header .container {
 }
 
 /*Shop*/
-
-.shop {
-	margin-top: 50px;
-}
 
 .shop-sidebar {
 	width: 260px;
