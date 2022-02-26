@@ -258,6 +258,11 @@ header .container {
 	margin-top: 50px;
 }
 
+.shop-sidebar {
+	width: 260px;
+	margin-right: 40px;
+}
+
 .shop .container {
 	display: flex;
 }
@@ -384,6 +389,52 @@ header .container {
 	user-select: none;
 }
 
+.shop-left-testimonials {
+	text-align: center;
+	margin-top: 20px;
+	border: 1px solid #e5e2e2;
+	padding: 25px 0;
+}
+
+.testimonial-info h3 {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	letter-spacing: .02em;
+	color: #1c1a19;
+	margin-bottom: 20px;
+}
+
+.testimonial-info p {
+	font-family: 'Open Sans';
+	font-size: 14px;
+	font-weight: 300;
+	color: #a4a4a4;
+	padding: 0 20px;
+}
+
+.testimonial-info {
+	margin-bottom: 10px;
+}
+
+.testimonial-user img {
+	margin-bottom: 7px;
+}
+
+.testimonial-user h4 {
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color: #1c1a19;
+}
+
+.testimonial-user p {
+	font-size: 14px;
+	color: #a4a4a4;
+	letter-spacing: .1em;
+}
+
 /*shop*/
 
 .shMain-top {
@@ -445,18 +496,19 @@ header .container {
 .shMain-product,
 .shMain-product img:nth-child(1) {
 	width: 140px;
+	height: 300px;
 }
 
 .shMain-product {
 	cursor: pointer;
 	transition: .3s ease;
-	margin-right: 120px;
+	margin-right: 150px;
 	margin-bottom: 60px;
 }
 
 .shMain-product-info {
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 .shMain-product-info p:nth-child(1) {
