@@ -327,7 +327,6 @@ header .container {
 
 .shop-asideSpec {
 	width: 260px;
-	border: 2px solid #e5e2e2;
 }
 
 .shop-asideSpec h3 {
@@ -451,6 +450,8 @@ header .container {
 .shMain-product {
 	cursor: pointer;
 	transition: .3s ease;
+	margin-right: 120px;
+	margin-bottom: 60px;
 }
 
 .shMain-product-info {
@@ -490,4 +491,9 @@ header .container {
 
 .shMain-product:hover {
 	transform: scale(1.1);
+}
+
+.shMain-products {
+	display: flex;
+	flex-wrap: wrap;
 }

@@ -192,6 +192,24 @@
 								<p class="shop-product-price"><span>$350</span>$299,99</p>
 							</div>
 						</div>
+						<div class="shMain-product">
+							<img src="assets/imgs/product-1-shop.png" alt="Product Image">
+							<div class="shMain-product-info">
+								<p>Casual Organic</p>
+								<h3>Pure Cosmetic</h3>
+								<img src="assets/imgs/4stars.png" alt="Product Mark: 4/5 stars">
+								<p class="shop-product-price"><span>$350</span>$299,99</p>
+							</div>
+						</div>
+						<div class="shMain-product">
+							<img src="assets/imgs/product-1-shop.png" alt="Product Image">
+							<div class="shMain-product-info">
+								<p>Casual Organic</p>
+								<h3>Pure Cosmetic</h3>
+								<img src="assets/imgs/4stars.png" alt="Product Mark: 4/5 stars">
+								<p class="shop-product-price"><span>$350</span>$299,99</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</main>
@@ -219,10 +237,14 @@
 		    var panel = this.nextElementSibling.nextElementSibling;
 		    if (panel.style.display === "block") {
 		      panel.style.display = "none";
-		      arrow.style.display = "block";
+		      arrow.style.top = '50%';
+		      arrow.classList.remove("fa-angle-up");
+		      arrow.classList.add("fa-angle-down");
 		    } else {
 		      panel.style.display = "block";
-		      arrow.style.display = "none";
+		      arrow.style.top = '30%';
+		      arrow.classList.remove("fa-angle-down");
+		      arrow.classList.add("fa-angle-up");
 		    }
 		  });
 		}
