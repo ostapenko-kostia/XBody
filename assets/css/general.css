@@ -439,18 +439,20 @@ header .container {
 }
 
 .shop-main-title {
-	text-transform: uppercase;
 	font-size: 38px;
-	font-family: 'Lato';
 	font-weight: 900;
-	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	color: #1c1a19;
 }
 
 .shop-main-desc {
 	font-family: 'Open Sans';
 	font-size: 14px;
-	color: #a4a4a4;
+	line-height: 24px;
 	font-weight: 300;
+	color: #a4a4a4;
+	margin-top: 10px;
 }
 
 .shop-categories {
@@ -493,6 +495,9 @@ header .container {
 .shMain-product,
 .shMain-product img:nth-child(1) {
 	width: 140px;
+}
+
+.shMain-product img:nth-child(1) {
 	height: 300px;
 }
 
@@ -545,4 +550,82 @@ header .container {
 .shMain-products {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+/*Mid Shop*/
+
+.midShop {
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.midShop-forWomen,
+.midShop-forChild {
+	display: flex;
+}
+
+.midShop-forWomen-left,
+.midShop-forChild-left {
+	margin: auto 0;
+	padding-left: 20px;
+}
+
+.midShop-forWomen-left p,
+.midShop-forChild-left p {
+	margin-bottom: 3px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #a4a4a4;
+}
+
+.midShop-forChild-left p {
+	width: 190px;
+}
+
+.midShop-forWomen-left h3,
+.midShop-forChild-left h3 {
+	font-size: 24px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #1c1a19;
+}
+
+.midShop-forWomen-left button,
+.midShop-forChild-left button {
+	border: none;
+	background-color: #1c1a19;
+	width: 104px;
+	height: 40px;
+	margin-top: 10px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	color: #fff;
+}
+
+/*Bottom Side Shop*/
+
+.bottomShop {
+	margin-top: 60px;
+}
+
+.btmShop-header-title {
+	font-size: 38px;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+	color: #1c1a19;
+}
+
+.btmShop-header-desc {
+	font-family: 'Open Sans';
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+	color: #a4a4a4;
+	margin-top: 10px;
 }
