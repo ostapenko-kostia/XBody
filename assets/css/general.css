@@ -624,7 +624,6 @@ header .container {
 .btmShop-header-desc {
 	font-family: 'Open Sans';
 	font-size: 14px;
-	line-height: 24px;
 	font-weight: 300;
 	color: #a4a4a4;
 	margin-top: 10px;
@@ -645,6 +644,12 @@ header .container {
 	position: relative;
 	margin-bottom: 40px;
 	margin-right: 50px;
+	cursor: pointer;
+	transition: .35s ease;
+}
+
+.btmShop-product:hover {
+	transform: scale(1.1);
 }
 
 .btmShop-product-rightSide {
@@ -722,4 +727,59 @@ header .container {
 	align-items: center;
 	justify-content: center;
 	letter-spacing: .1em;
+}
+
+/* Brands Section */
+
+.brands {
+	margin: 90px 0;
+}
+
+.brands .container {
+	height: 100px;
+	background-color: #006d39;
+	display: flex;
+}
+
+.brands-list {
+	display: flex;
+	margin: auto;
+	align-items: center;
+}
+
+.brands-list li {
+	margin-right: 65px;
+}
+
+.brands-list li:nth-child(6) {
+	margin-right: 0;
+}
+
+/* Special Proposition */
+
+.specProposSection-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 80px;
+}
+
+.specProposSection-header h2 {
+	font-weight: 700;
+	font-size: 38px;
+	color: #1c1a19;
+	text-transform: uppercase;
+}
+
+.specProposSection-header p {
+	font-family: 'Open Sans';
+	font-weight: 300;
+	font-size: 14px;
+	color: #a4a4a4;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.specPropos-leftSide img {
+	width: 260px;
 }
