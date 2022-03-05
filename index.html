@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>XBody</title>
 
+	<!-- Slick -->
+	<link rel="stylesheet" href="assets/css/slick.css">
+
 	<!-- Styles -->
 	<link rel="stylesheet" href="assets/css/general.css">
 </head>
@@ -77,19 +80,49 @@
 		</div>
 	</header>
 	<div class="intro">
-		<div class="intro-descriptions">
-			<div class="intro-description introDesc1">
-				<img class="description-bg" src="assets/imgs/introDescr.png">
-				<div class="container">
-					<div class="introDesc-content">
-						<h3>Natural Collection</h3>
-						<h2>Body Care</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br>labore et dolore magna aliqua.</p>
-						<button>Add to bag</button>
-					</div>
-					<img class="description-product" src="assets/imgs/introProduct.png">
-				</div>
+		<div class="intro-inner introInner1">
+			<img src="assets/imgs/intro-bg.png" draggable="false">
+			<img class="intro-description-bg" src="assets/imgs/introDescr.png" draggable="false">
+			<div class="container">
+				<p>Natural Collection</p>
+				<h2>Body Care</h2>
+				<p class="intro-desc-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et<br>dolore magna aliqua.</p>
+				<button class="intro-desc-btn">Add to bag</button>
 			</div>
+			<img class="intro-product" src="assets/imgs/intro-product-1.png" alt="Product Image">
+		</div>
+		<div class="intro-inner introInner2">
+			<img src="assets/imgs/intro-bg-2.jpg" draggable="false">
+			<img class="intro-description-bg" src="assets/imgs/introDescr-2.png" draggable="false">
+			<div class="container">
+				<p>Natural Collection</p>
+				<h2>Body Care</h2>
+				<p class="intro-desc-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et<br>dolore magna aliqua.</p>
+				<button class="intro-desc-btn">Add to bag</button>
+			</div>
+			<img class="intro-product" src="assets/imgs/intro-product-2.png" alt="Product Image">
+		</div>
+		<div class="intro-inner introInner3">
+			<img src="assets/imgs/intro-bg-3.jpg" draggable="false">
+			<img class="intro-description-bg" src="assets/imgs/introDescr-3.png" draggable="false">
+			<div class="container">
+				<p>Natural Collection</p>
+				<h2>Body Care</h2>
+				<p class="intro-desc-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et<br>dolore magna aliqua.</p>
+				<button class="intro-desc-btn">Add to bag</button>
+			</div>
+			<img class="intro-product" src="assets/imgs/intro-product-3.png" alt="Product Image">
+		</div>
+		<div class="intro-inner introInner4">
+			<img src="assets/imgs/intro-bg-4.jpg" draggable="false">
+			<img class="intro-description-bg" src="assets/imgs/introDescr-4.png" draggable="false">
+			<div class="container">
+				<p>Natural Collection</p>
+				<h2>Body Care</h2>
+				<p class="intro-desc-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et<br>dolore magna aliqua.</p>
+				<button class="intro-desc-btn">Add to bag</button>
+			</div>
+			<img class="intro-product" src="assets/imgs/intro-product-4.png" alt="Product Image">
 		</div>
 	</div>
 	<secction class="shop">
@@ -482,6 +515,17 @@
 
 	<!-- FontAwesome -->
 	<script src="https://kit.fontawesome.com/388209ea92.js" crossorigin="anonymous"></script>
+
+	<!-- Slick -->
+	<script src="assets/js/slick.js"></script>
+	<script>
+		$('.intro').slick({
+			arrows: false,
+			dots: true,
+			vertical: true,
+			verticalSwiping: true
+		});
+	</script>
 
 	<!-- Shop's Sidebar Accordion -->
 	<script>
