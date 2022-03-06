@@ -26,6 +26,7 @@ ul {
 
 a {
 	text-decoration: none;
+	cursor: pointer;
 }
 
 /*SupHeader*/
@@ -354,6 +355,10 @@ header .container {
 	margin-left: 10px;
 }
 
+.asideSpec-product {
+	display: flex !important;  
+}
+
 .asideSpec-product-info h4,
 .asideSpec-product-info img {
 	margin-bottom: 7px;
@@ -391,7 +396,7 @@ header .container {
 	padding: 25px 0;
 }
 
-.testimonial-info h3 {
+.shop-left-testimonials h3 {
 	text-transform: uppercase;
 	font-size: 16px;
 	font-weight: 700;
@@ -414,6 +419,8 @@ header .container {
 
 .testimonial-user img {
 	margin-bottom: 7px;
+	margin-left: 50%;
+	transform: translateX(-50% );
 }
 
 .testimonial-user h4 {
@@ -785,9 +792,9 @@ header .container {
 }
 
 .specPropos {
-	display: flex;
+	display: flex !important;
 	width: auto;
-	margin-right: 80px;
+	margin-right: 80px !important;
 	margin-bottom: 20px;
 }
 
@@ -896,6 +903,24 @@ header .container {
 	font-weight: 700;
 	letter-spacing: .1em;
 	font-size: 11px;
+}
+
+.slick-dots {
+	display: flex !important;
+}
+
+.slick-dots li button {
+	color: transparent;
+	margin-right: 20px;
+	border: none;
+	background-color: #ccc;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+}
+
+.slick-dots .slick-active button {
+	background-color: #a4a4a4;
 }
 
 /* Footer */

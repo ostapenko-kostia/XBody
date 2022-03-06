@@ -180,21 +180,40 @@
 				</div>
 				<div class="shop-asideSpec">
 					<h3>Special</h3>
-					<div class="asideSpec-product">
-						<img src="assets/imgs/product_1.png" alt="Product photo">
-						<div class="asideSpec-product-info">
-							<h4>Pure cosmetic</h4>
-							<img src="assets/imgs/4stars.png" alt="Product mark">
-							<p class="asideSpec-product-price"><span>$350</span> $299,99</p>
+					<div class="shop-asideSpec-products">
+						<div class="asideSpec-product">
+							<img src="assets/imgs/product_1.png" alt="Product photo">
+							<div class="asideSpec-product-info">
+								<h4>Pure cosmetic</h4>
+								<img src="assets/imgs/4stars.png" alt="Product mark">
+								<p class="asideSpec-product-price"><span>$350</span> $299,99</p>
+							</div>
+						</div>
+						<div class="asideSpec-product">
+							<img src="assets/imgs/product_2.png" alt="Product photo">
+							<div class="asideSpec-product-info">
+								<h4>Pure cosmetic</h4>
+								<img src="assets/imgs/4stars.png" alt="Product mark">
+								<p class="asideSpec-product-price"><span>$350</span> $299,99</p>
+							</div>
 						</div>
 					</div>
-					<hr>
-					<div class="asideSpec-product">
-						<img src="assets/imgs/product_2.png" alt="Product photo">
-						<div class="asideSpec-product-info">
-							<h4>Pure cosmetic</h4>
-							<img src="assets/imgs/4stars.png" alt="Product mark">
-							<p class="asideSpec-product-price"><span>$350</span> $299,99</p>
+					<div class="shop-asideSpec-products">
+						<div class="asideSpec-product">
+							<img src="assets/imgs/product_2.png" alt="Product photo">
+							<div class="asideSpec-product-info">
+								<h4>Pure cosmetic</h4>
+								<img src="assets/imgs/4stars.png" alt="Product mark">
+								<p class="asideSpec-product-price"><span>$350</span> $299,99</p>
+							</div>
+						</div>
+						<div class="asideSpec-product">
+							<img src="assets/imgs/product_1.png" alt="Product photo">
+							<div class="asideSpec-product-info">
+								<h4>Pure cosmetic</h4>
+								<img src="assets/imgs/4stars.png" alt="Product mark">
+								<p class="asideSpec-product-price"><span>$350</span> $299,99</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -202,19 +221,32 @@
 					<img src="assets/imgs/left-banner.png" alt="Shop Left Banner Image" draggable="false">
 				</div>
 				<div class="shop-left-testimonials">
-					<div class="testimonial">
-						<div class="testimonial-info">
-							<h3>Testimonials</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<h3>Testimonials</h3>
+					<div class="testimonials">
+						<div class="testimonial">
+							<div class="testimonial-info">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+							<div class="testimonial-user">
+								<img src="assets/imgs/testimonials-user1.png" alt="Julia Smith">
+								<h4>Julia Smith</h4>
+								<p class="testimonials-job">Web Designer</p>
+							</div>
 						</div>
-						<div class="testimonial-user">
-							<img src="assets/imgs/testimonials-user1.png" alt="Julia Smith">
-							<h4>Julia Smith</h4>
-							<p class="testimonials-job">Web Designer</p>
+						<div class="testimonial">
+							<div class="testimonial-info">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+							<div class="testimonial-user">
+								<img src="assets/imgs/testimonials-user1.png" alt="Julia Smith">
+								<h4>Julia Smith</h4>
+								<p class="testimonials-job">Web Designer</p>
+							</div>
 						</div>
 					</div>
-				</div>
-			</aside>
+
+					</div>
+								</aside>
 			<main class="shop-main">
 				<div class="topShop">
 					<div class="shMain-top">
@@ -223,9 +255,9 @@
 					</div>
 					<div class="shMain-categories">
 						<ul class="shop-categories">
-							<li class="shop-categ-active"><a href="#">Feautured products</a></li>
-							<li><a href="#">New Products</a></li>
-							<li><a href="#">Best Seller</a></li>
+							<li class="shop-categ-active"><a  onclick="categChange(this)">Feautured products</a></li>
+							<li><a onclick="categChange(this)">New Products</a></li>
+							<li><a onclick="categChange(this)">Best Seller</a></li>
 						</ul>
 					</div>
 					<div class="shMain-content">
@@ -419,6 +451,68 @@
 						<button class="specPropos-btn">Shop Now</button>
 					</div>
 				</div>
+				<div class="specPropos">
+					<div class="specPropos-leftSide">
+						<img src="assets/imgs/specPropos-1.png" alt="Product Image">
+					</div>
+					<div class="specPropos-rightSide">
+						<p class="specPropos-categ">Casual Organic</p>
+						<h3>Pure Cosmetic</h3>
+						<img src="assets/imgs/4stars.png" alt="4/5 stars">
+						<p class="specPropos-price"><span>$350</span> $299,99</p>
+						<p class="specPropos-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
+						<div class="specPropos-timer">
+							<div class="specPropos-timer-days">
+								<h4>06</h4>
+								<p>Days</p>
+							</div>
+							<div class="specPropos-timer-hours">
+								<h4>35</h4>
+								<p>Hours</p>
+							</div>
+							<div class="specPropos-timer-minutes">
+								<h4>23</h4>
+								<p>Minutes</p>
+							</div>
+							<div class="specPropos-timer-seconds">
+								<h4>05</h4>
+								<p>Seconds</p>
+							</div>
+						</div>
+						<button class="specPropos-btn">Shop Now</button>
+					</div>
+				</div>
+				<div class="specPropos">
+					<div class="specPropos-leftSide">
+						<img src="assets/imgs/specPropos-2.png" alt="Product Image">
+					</div>
+					<div class="specPropos-rightSide">
+						<p class="specPropos-categ">Casual Organic</p>
+						<h3>Pure Cosmetic</h3>
+						<img src="assets/imgs/4stars.png" alt="4/5 stars">
+						<p class="specPropos-price"><span>$350</span> $299,99</p>
+						<p class="specPropos-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
+						<div class="specPropos-timer">
+							<div class="specPropos-timer-days">
+								<h4>06</h4>
+								<p>Days</p>
+							</div>
+							<div class="specPropos-timer-hours">
+								<h4>35</h4>
+								<p>Hours</p>
+							</div>
+							<div class="specPropos-timer-minutes">
+								<h4>23</h4>
+								<p>Minutes</p>
+							</div>
+							<div class="specPropos-timer-seconds">
+								<h4>05</h4>
+								<p>Seconds</p>
+							</div>
+						</div>
+						<button class="specPropos-btn">Shop Now</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -521,9 +615,24 @@
 	<script>
 		$('.intro').slick({
 			arrows: false,
-			dots: true,
 			vertical: true,
-			verticalSwiping: true
+			verticalSwiping: true,
+			autoplay: 2500
+		});
+		$('.shop-asideSpec-products').slick({
+			arrows: false,
+			autoplay: 1500,
+		});
+		$('.testimonials').slick({
+			arrows: false,
+			autoplay: 1000
+		});
+		$('.specPropositions').slick({
+			arrows: false,
+			dots: true,
+			autoplay: 2000,
+			slidesToShow: 2,
+			slidesToScroll: 1
 		});
 	</script>
 
@@ -551,6 +660,9 @@
 		    }
 		  });
 		}
-</script>
+	</script>
+
+	<!-- Shop categories function -->
+	<script src="assets/js/shop-categories.js"></script>
 </body>
 </html>
