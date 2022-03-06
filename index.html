@@ -74,6 +74,24 @@
 					<a href="#">
 						<i class="fa-solid fa-bag-shopping"></i>
 					</a>
+
+					<!-- Don't Care -->
+
+					<!-- <div class="header-selectedProducts">
+						<div class="selectedProducts-header">
+							<h2>Selected Products</h2>
+						</div>
+						<div class="selectedProducts">
+							<div class="selectedProduct">
+								<img src="assets/imgs/product-1-shop.png">
+								<div class="selectedProduct-rightSide">
+									<p>Casual Organic</p>
+									<h3>Pure Cosmetic</h3>
+									<p><span>$350</span>$299,99</p>
+								</div>
+							</div>
+						</div>
+					</div> -->
 					<span id="balance">$0.00</span>
 				</div>
 			</div>
@@ -244,9 +262,8 @@
 							</div>
 						</div>
 					</div>
-
-					</div>
-								</aside>
+				</div>
+			</aside>
 			<main class="shop-main">
 				<div class="topShop">
 					<div class="shMain-top">
@@ -255,38 +272,84 @@
 					</div>
 					<div class="shMain-categories">
 						<ul class="shop-categories">
-							<li class="shop-categ-active"><a  onclick="categChange(this)">Feautured products</a></li>
-							<li><a onclick="categChange(this)">New Products</a></li>
-							<li><a onclick="categChange(this)">Best Seller</a></li>
+							<li class="shop-categ-active"><a name="feautured" onclick="categChange(this)">Feautured products</a></li>
+							<li><a name="new" onclick="categChange(this)">New Products</a></li>
+							<li><a name="best" onclick="categChange(this)">Best Seller</a></li>
 						</ul>
 					</div>
 					<div class="shMain-content">
-						<div class="shMain-products">
-							<div class="shMain-product">
-								<img src="assets/imgs/product-1-shop.png" alt="Product Image">
-								<div class="shMain-product-info">
-									<p>Casual Organic</p>
-									<h3>Pure Cosmetic</h3>
-									<img src="assets/imgs/4stars.png" alt="Product Mark: 4/5 stars">
-									<p class="shop-product-price"><span>$350</span>$299,99</p>
+						<div class="featured-products">
+							<div class="shMain-products">
+								<div class="shMain-product">
+									<img src="assets/imgs/product-1-shop.png" alt="Product Image">
+									<div class="shMain-product-info">
+										<p>Casual Organic</p>
+										<h3>Pure Cosmetic</h3>
+										<img src="assets/imgs/4stars.png" alt="Product Mark: 4/5 stars">
+										<p class="shop-product-price"><span>$350</span>$299,99</p>
+									</div>
+								</div>
+								<div class="shMain-product">
+									<img src="assets/imgs/product-2-shop.png" alt="Product Image">
+									<div class="shMain-product-info">
+										<p>Casual Organic</p>
+										<h3>Pure Cosmetic</h3>
+										<img src="assets/imgs/4stars.png" alt="Product Mark: 4/5 stars">
+										<p class="shop-product-price"><span>$350</span>$299,99</p>
+									</div>
+								</div>
+								<div class="shMain-product">
+									<img src="assets/imgs/product-3-shop.png" alt="Product Image">
+									<div class="shMain-product-info">
+										<p>Casual Organic</p>
+										<h3>Pure Cosmetic</h3>
+										<img src="assets/imgs/4stars.png" alt="Product Mark: 4/5 stars">
+										<p class="shop-product-price"><span>$350</span>$299,99</p>
+									</div>
 								</div>
 							</div>
-							<div class="shMain-product">
-								<img src="assets/imgs/product-2-shop.png" alt="Product Image">
-								<div class="shMain-product-info">
-									<p>Casual Organic</p>
-									<h3>Pure Cosmetic</h3>
-									<img src="assets/imgs/4stars.png" alt="Product Mark: 4/5 stars">
-									<p class="shop-product-price"><span>$350</span>$299,99</p>
+						</div>
+						<div class="new-products">
+							<div class="shMain-products">
+								<div class="shMain-product">
+									<img src="assets/imgs/product-3-shop.png" alt="Product Image">
+									<div class="shMain-product-info">
+										<p>Casual Organic</p>
+										<h3>Pure Cosmetic</h3>
+										<img src="assets/imgs/4stars.png" alt="Product Mark: 4/5 stars">
+										<p class="shop-product-price"><span>$350</span>$299,99</p>
+									</div>
+								</div>
+								<div class="shMain-product">
+									<img src="assets/imgs/product-2-shop.png" alt="Product Image">
+									<div class="shMain-product-info">
+										<p>Casual Organic</p>
+										<h3>Pure Cosmetic</h3>
+										<img src="assets/imgs/4stars.png" alt="Product Mark: 4/5 stars">
+										<p class="shop-product-price"><span>$350</span>$299,99</p>
+									</div>
 								</div>
 							</div>
-							<div class="shMain-product">
-								<img src="assets/imgs/product-3-shop.png" alt="Product Image">
-								<div class="shMain-product-info">
-									<p>Casual Organic</p>
-									<h3>Pure Cosmetic</h3>
-									<img src="assets/imgs/4stars.png" alt="Product Mark: 4/5 stars">
-									<p class="shop-product-price"><span>$350</span>$299,99</p>
+						</div>
+						<div class="best-seller">
+							<div class="shMain-products">
+								<div class="shMain-product">
+									<img src="assets/imgs/product-3-shop.png" alt="Product Image">
+									<div class="shMain-product-info">
+										<p>Casual Organic</p>
+										<h3>Pure Cosmetic</h3>
+										<img src="assets/imgs/4stars.png" alt="Product Mark: 4/5 stars">
+										<p class="shop-product-price"><span>$350</span>$299,99</p>
+									</div>
+								</div>
+								<div class="shMain-product">
+									<img src="assets/imgs/product-1-shop.png" alt="Product Image">
+									<div class="shMain-product-info">
+										<p>Casual Organic</p>
+										<h3>Pure Cosmetic</h3>
+										<img src="assets/imgs/4stars.png" alt="Product Mark: 4/5 stars">
+										<p class="shop-product-price"><span>$350</span>$299,99</p>
+									</div>
 								</div>
 							</div>
 						</div>

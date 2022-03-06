@@ -557,6 +557,11 @@ header .container {
 	flex-wrap: wrap;
 }
 
+.new-products,
+.best-seller {
+	display: none;
+}
+
 /*Mid Shop*/
 
 .midShop {
