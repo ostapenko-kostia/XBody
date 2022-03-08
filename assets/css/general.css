@@ -1237,8 +1237,10 @@ footer {
 	}
 	.intro-desc-text {
 		display: block;
-		transform: translateX(25px);
-		width: 450px;
+	}
+	.intro-inner .container {
+		width: 35%;
+		left: 5%;
 	}
 }
 
@@ -1310,5 +1312,147 @@ footer {
 	}
 	.shop-main {
 		max-width: 600px;
+	}
+	.header-selectedProducts {
+		left: 22%;
+	}
+	.intro-inner .container h2 {
+		font-size: 45px;
+	}
+}
+
+@media(max-width: 991px) {
+	.shop-main {
+		width: 400px;
+	}
+	.shop-categories {
+		flex-direction: column;
+	}
+	.shop-categories li {
+		margin-right: 0;
+		width: 220px;
+		margin-bottom: 10px;
+	}
+	.shop-categegories li:nth-chlid(3) {
+		margin-bottom: 0;
+	}
+	.shop-categ-active:after {
+		width: 100px;
+	}
+	.shop-categories li a {
+		width: 220px;
+	}
+	.midShop {
+		transform: translateX(-40%);
+		width: 800px;
+	}
+	.midShop-forWomen,
+	.midShop-forChild {
+		width: 100%;
+		justify-content: space-between;
+	}
+	.intro-product {
+		left: 40%;
+		top: 50%;
+		transform: translateY(-50%) scale(0.5);
+	}
+}
+
+@media(max-width: 949px) {
+	.shMain-products {
+		flex-wrap: nowrap;
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	.shMain-product {
+		margin-left: auto;
+		margin-right: auto !important;
+	}
+	.shMain-product:nth-child(3n) {
+		margin-right: auto !important;
+	}
+}
+
+@media(max-width: 895px) {
+	.container {
+		max-width: 660px;
+	}
+	.shMain-top {
+		width: 350px;
+	}
+	.midShop {
+		width: 600px;
+	}
+	.btmShop-products {
+		width: 500px;
+	}
+	.brands-list li:nth-child(4n) {
+		margin-right: 40px;
+	}
+	.brands-list li:nth-child(3n) {
+		margin-right: 0;
+	}
+	.specProposSection-header,
+	.btmShop-header {
+		text-align: center;
+	}
+	.specPropositions {
+		padding-left: 0;
+	}
+	.bottomShop .container {
+		margin-right: 0;
+		width: auto;
+	}
+	.header-selectedProducts {
+		left: 18%;
+	}
+}
+
+@media(max-width: 889px) {
+	.footer-inner {
+		flex-direction: column;
+		text-align: center;
+	}
+	.footer-aboutUs,
+	.footer-usefulLinks,
+	.footer-latestPost-section {
+		margin-bottom: 50px;
+	}
+	.footer-latestPost {
+		justify-content: center;
+		flex-direction: column;
+	}
+	.subscribe-email {
+		margin: 20px auto;
+	}
+	.footer-folowUs-social {
+		margin: 0 auto !important;
+	}
+}
+
+@media(max-width: 823px) {
+	.header-selectedProducts {
+		left: 10%;
+	}
+}
+
+@media(max-width: 741px) {
+	.header-selectedProducts {
+		left: 1%;
+	}
+}
+
+@media(max-width: 728px) {
+	.intro-inner .container h2 {
+		font-size: 28px;
+	}
+	.intro-desc-text {
+		font-size: 12px;
+	}
+	.shop-sidebar {
+		margin-right: 20px;
+	}
+	.middleSide h1 {
+		transform: translateX(70%);
 	}
 }
