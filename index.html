@@ -183,6 +183,10 @@
 	</div>
 	<secction class="shop">
 		<div class="container">
+			<div class="sidebar-btn">
+				<i class="fa fa-solid fa-bars"></i>
+				<a>Menu</a>
+			</div>
 			<aside class="shop-sidebar">
 				<div class="shop-asideCat">
 					<h3>Categories</h3>
@@ -470,7 +474,7 @@
 						</div>
 
 					</div>
-									</div>
+				</div>
 			</main>
 		</div>
 	</secction>
@@ -782,5 +786,26 @@
 
 	<!-- Shop categories function -->
 	<script src="assets/js/shop-categories.js"></script>
+
+	<!-- Shop sidebar function -->
+	<script>
+		var btn = $('.sidebar-btn');
+		var sidebar = $('.shop-sidebar');
+		var shop = $('.topShop');
+
+		var clicked = false;
+
+		btn.on("click", function() {
+			if (!clicked) {
+				clicked = true;
+				shop.css("display", 'none');
+				sidebar.css("display", 'block');
+			} else if (clicked) {
+				clicked = false;
+				sidebar.css("display", 'none');
+				shop.css("display", 'block');
+			}
+		});
+	</script>
 </body>
 </html>
