@@ -1644,7 +1644,8 @@ footer {
 	.bottomShop,
 	.shop-main,
 	.btmShop-product,
-	.btmShop-products {
+	.btmShop-products,
+	.specPropos {
 		max-width: 320px;
 	}
 	.intro-product {
@@ -1653,5 +1654,78 @@ footer {
 	}
 	.sidebar-btn {
 		transform: translateY(-50px);
+	}
+}
+
+@media(max-width: 454px) {
+	.intro-inner .container h2 {
+		font-size: 16px;
+	}
+	.intro-desc-text {
+		font-size: 12px;
+	}
+	.specPropos {
+		margin-right: 0;
+	}
+	.footer-aboutUs,
+	.footer-usefulLinks,
+	.footer-latestPost-section,
+	.footer-social,
+	.shMain-top {
+		max-width: 320px;
+	}
+	.subscribe-email {
+		width: 200px;
+	}
+	.intro-inner .container {
+		top: 10%;
+	}
+}
+
+@media(max-width: 412px) {
+	.container,
+	.bottomShop,
+	.shop-main,
+	.btmShop-product,
+	.btmShop-products,
+	.specPropos,
+	.shMain-top,
+	.specPropositions .slick-track {
+		max-width: 280px;
+	}
+	.header-userBtns {
+		flex-direction: column;
+	}
+	.header-favourite,
+	.header-search {
+		margin-bottom: 10px;
+	}
+	.header-selectedProducts {
+		left: -270%;
+	}
+	.shop-main-title {
+		font-size: 30px;
+	}
+}
+
+@media(max-width: 315px) {
+	.intro-desc-text {
+		font-size: 10px;
+	}
+}
+
+@media(max-width: 310px) {
+	.container,
+	.bottomShop,
+	.shop-main,
+	.btmShop-product,
+	.btmShop-products,
+	.specPropos,
+	.shMain-top,
+	.specPropositions .slick-track,
+	.midShop,
+	.midShop-forWomen-right,
+	.midShop-forChild-right {
+		max-width: 230px;
 	}
 }
