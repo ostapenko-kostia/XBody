@@ -1,22 +1,21 @@
 var acc = document.getElementsByClassName("accordion");
-		var i;
+var i;
 
 for (i = 0; i < acc.length; i++) {
- 	acc[i].addEventListener("click", function() {
-    this.classList.toggle("left-categ-active");
-
-	var arrow = this.nextElementSibling;
-    var panel = this.nextElementSibling.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-      arrow.style.top = '50%';
-      arrow.classList.remove("fa-angle-up");
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var arrow = this.nextElementSibling;
+    var panel = arrow.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
       arrow.classList.add("fa-angle-down");
+      arrow.classList.remove("fa-angle-up");
+      arrow.style.top = "50%";
     } else {
-      panel.style.display = "block";
-      arrow.style.top = '30%';
-      arrow.classList.remove("fa-angle-down");
+      panel.style.maxHeight = panel.scrollHeight + "px";
       arrow.classList.add("fa-angle-up");
+      arrow.classList.remove("fa-angle-down");
+      arrow.style.top = "30%";
     }
   });
 }

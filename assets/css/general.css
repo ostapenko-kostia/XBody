@@ -314,10 +314,12 @@ header .container {
 
 .shop-li-sublist {
 	background: #e0e0e0;
-	display: none;
 	overflow: hidden;
 	margin-bottom: 10px;
-	padding-left: 10px;
+	padding: 0 10px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
 }
 
 .accordion {
