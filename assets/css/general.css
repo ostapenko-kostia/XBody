@@ -1796,6 +1796,47 @@ footer {
 	.sidebar-nav {
 		display: inherit;
 	}
+	.shop-sidebar {
+		display: none;
+		position: absolute;
+		width: 100%;
+		height: 1150%;
+		transform: translateY(-43px);
+		left: 0;
+		z-index: 1000;
+		background: rgba(0, 0, 0, 0.5);
+	}
+	.shop-asideCat,
+	.shop-asideSpec,
+	.shop-left-testimonials {
+		background: #fff;
+	}
+	.shop-asideCat,
+	.shop-asideSpec,
+	.shop-left-testimonials,
+	.shop-left-banner {
+		margin: 0 auto;
+		width: 260px !important;
+		margin-bottom: 30px;
+	}
+	.shop-left-banner img,
+	.shop-left-testimonials {
+		width: 260px !important;
+	}
+	.shop-left-testimonials {
+		margin-bottom: 35px;
+	}
+	.sidebar-nav {
+		margin-top: 15px;
+		background: rgba(5, 5, 5, 0);
+	}
+	.sidebar-nav ul li a {
+		color: #fff;
+		text-shadow: 0px 4px 2px #000;
+	}
+	.shop-active {
+		display: block;
+	}
 }
 
 @media(max-width: 412px) {
