@@ -1491,6 +1491,29 @@ footer {
 	}
 }
 
+@media(max-width: 768px) {
+	.shop-main {
+		width: 600px;
+	}
+	.shop .container  {
+		flex-direction: column;
+	}
+	.shop-categories {
+		flex-direction: row;
+	}
+	.shMain-top {
+		width: 100%;
+	}
+	.shop-sidebar {
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+	.midShop,
+	.bottomShop {
+		transform: translate(0);
+	}
+}
+
 @media(max-width: 741px) {
 	.header-selectedProducts {
 		left: 1%;
