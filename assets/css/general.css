@@ -1284,6 +1284,12 @@ footer {
 		width: 35%;
 		left: 5%;
 	}
+	.slick-dots {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: -20px;
+	}
 }
 
 @media(max-width: 1155px) {
