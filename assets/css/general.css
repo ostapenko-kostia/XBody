@@ -1641,8 +1641,13 @@ footer {
 		margin-right: 0;
 		margin-bottom: 50px;
 	}
+	.midShop {
+		width: 100%;
+		align-items: center;
+	}
 	.midShop-forWomen-right {
 		margin-bottom: 10px;
+		width: 250px;
 	}
 	.sidebar-btn {
 		transform: translateX(0);
