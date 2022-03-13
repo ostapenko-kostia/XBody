@@ -624,6 +624,12 @@ header .container {
 	text-transform: uppercase;
 	letter-spacing: 0.15em;
 	color: #fff;
+	transition: .2s ease-out;
+}
+
+.midShop-forWomen-left button:hover,
+.midShop-forChild-left button:hover {
+	transform: scale(1.1);
 }
 
 /*Bottom Side Shop*/
@@ -772,6 +778,11 @@ header .container {
 
 .brands-list li {
 	margin-right: 65px;
+	transition: .1s ease-out;
+}
+
+.brands-list li:hover {
+	transform: scale(1.1);
 }
 
 .brands-list li:nth-child(6) {
@@ -1010,6 +1021,12 @@ footer {
 .footer-latestPost {
 	display: flex;
 	margin: 10px 0;
+	cursor: pointer;
+	transition: .3s ease-out;
+}
+
+.footer-latestPost:hover {
+	transform: scale(1.05);
 }
 
 .footer-latestPost-leftSide {
@@ -1023,6 +1040,7 @@ footer {
 }
 
 .footer-latestPost-rightSide p {
+	color: #a4a4a4;
 	font-weight: 400;
 	font-size: 13px;
 	margin-top: 5px;
