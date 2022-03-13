@@ -1335,9 +1335,16 @@ footer {
 	}
 	header .container  {
 		flex-direction: column;
+		align-items: center;
+		position: relative;
+	}
+	.header-nav {
+		margin-bottom: 10px;
 	}
 	.header-userBtns {
-		margin-top: 10px;
+		position: absolute;
+		left: 40%;
+		bottom: -15px;
 	}
 	.shMain-top {
 		width: 550px;
@@ -1533,10 +1540,15 @@ footer {
 		position: relative;
 	}
 	.header-userBtns {
-		margin-top: 0;
-		position: absolute;
-		top: 10px;
-		right: 10px;
+		top: -30%;
+		left: 32%;
+	}
+	.header-favourite a i,
+	.header-search a i,
+	.header-cart a i,
+	#balance {
+		margin-bottom: 10px;
+		color: #b5b5b5;
 	}
 	.header-selectedProducts {
 		left: -220%;
@@ -1636,6 +1648,9 @@ footer {
 		width: 120px;
 		height: 30px;
 	}
+	.header-userBtns {
+		left: 28%;
+	}
 }
 
 @media(max-width: 508px) {
@@ -1673,6 +1688,9 @@ footer {
 	.header-selectedProducts {
 		width: 200px;
 		left: -50%;
+	}
+	.header-userBtns {
+		left: 23%;
 	}
 }
 
@@ -1730,19 +1748,8 @@ footer {
 	.specPropositions .slick-track {
 		max-width: 280px;
 	}
-	.supheader-social {
-		margin-bottom: 30px;
-	}
 	.header-userBtns {
-		top: -40%;
-		right: 20%;
-	}
-	.header-favourite a i,
-	.header-search a i,
-	.header-cart a i,
-	#balance {
-		margin-bottom: 10px;
-		color: #b5b5b5;
+		left: 17%;
 	}
 	.header-cart {
 		margin-bottom: 0;
