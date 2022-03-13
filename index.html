@@ -16,21 +16,40 @@
 		<div class="container">
 			<div class="leftSide">
 				<div class="langSelect">
-					<div class="languages">
-						<div class="engLanguage">
-							<img src="assets/imgs/engFlag.png" alt="American Flag">
+					<img src="assets/imgs/engFlag.png" alt="Flag" width="16px">
+					<select onchange="changeFlag()" class="langSelect-inner">
+						<option selected value="1" class="engLanguage">
 							<a href="#">English</a>
-						</div>
-					</div>
-					<button>▾</button>
+						</option>
+						<option value="2" class="spaLanguage">
+							<a href="#">Spanish</a>
+						</option>
+						<option value="3" class="gerLanguage">
+							<a href="#">German</a>
+						</option>
+						<option value="4" class="freLanguage">
+							<a href="#">French</a>
+						</option>
+						<option value="5" class="itaLanguage">
+							<a href="#">Italian</a>
+						</option>
+					</select>
 				</div>
 				<div class="curSelect">
-					<div class="currency">
-						<div class="currency-usd">
+					<select class="currency">
+						<option value="1" class="currency-usd">
 							<a href="#">USD / $</a>
-						</div>
-					</div>
-					<button>▾</button>
+						</option>
+						<option value="2" class="currency-GBP">
+							<a href="#">EUR / €</a>
+						</option>
+						<option value="3" class="currency-GBP">
+							<a href="#">GBP / £</a>
+						</option>
+						<option value="4" class="currency-GBP">
+							<a href="#">CNY / ¥</a>
+						</option>
+					</select>
 				</div>
 			</div>
 			<div class="middleSide">
@@ -759,53 +778,15 @@
 	</script>
 
 	<!-- Shop's Sidebar Accordion -->
-	<script>
-		var acc = document.getElementsByClassName("accordion");
-		var i;
-
-		for (i = 0; i < acc.length; i++) {
-		 	acc[i].addEventListener("click", function() {
-		    this.classList.toggle("left-categ-active");
-
-			var arrow = this.nextElementSibling;
-		    var panel = this.nextElementSibling.nextElementSibling;
-		    if (panel.style.display === "block") {
-		      panel.style.display = "none";
-		      arrow.style.top = '50%';
-		      arrow.classList.remove("fa-angle-up");
-		      arrow.classList.add("fa-angle-down");
-		    } else {
-		      panel.style.display = "block";
-		      arrow.style.top = '30%';
-		      arrow.classList.remove("fa-angle-down");
-		      arrow.classList.add("fa-angle-up");
-		    }
-		  });
-		}
-	</script>
+	<script src="assets/js/shopAccordion.js"></script>
 
 	<!-- Shop categories function -->
 	<script src="assets/js/shop-categories.js"></script>
 
 	<!-- Shop sidebar function -->
-	<script>
-		var btn = $('.sidebar-btn');
-		var sidebar = $('.shop-sidebar');
-		var shop = $('.topShop');
+	<script src="assets/js/shop--sidebar.js"></script>
 
-		var clicked = false;
-
-		btn.on("click", function() {
-			if (!clicked) {
-				clicked = true;
-				shop.css("display", 'none');
-				sidebar.css("display", 'block');
-			} else if (clicked) {
-				clicked = false;
-				sidebar.css("display", 'none');
-				shop.css("display", 'block');
-			}
-		});
-	</script>
+	<!-- Supheader flag change script -->
+	<script src="assets/js/changingFlag.js"></script>
 </body>
 </html>

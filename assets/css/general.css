@@ -48,16 +48,20 @@ a {
 	align-items: center;
 }
 
-.languages,
-.currency {
-	margin-right: 5px;
-}
-
-.languages a {
+.langSelect select,
+.curSelect select {
+	background: transparent;
+	border: none !important;
 	font-weight: 400;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #a8a8a8;
+	cursor: pointer;
+}
+
+.langSelect select option,
+.curSelect select option {
+	color: #000;
 }
 
 .langSelect button,
@@ -66,12 +70,6 @@ a {
 	background-color: transparent;
 	color: #fff;
 	font-size: 22px;
-}
-
-.currency a {
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #a8a8a8;
 }
 
 .curSelect {
@@ -113,7 +111,12 @@ a {
 }
 
 .supheader-social li {
-	margin-right: 10px;
+	margin-right: 20px;
+	transition: .1s ease;
+}
+
+.supheader-social li:hover {
+	transform: scale(1.1);
 }
 
 .supheader-social li:nth-child(5) {
