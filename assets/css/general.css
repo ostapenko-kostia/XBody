@@ -1537,7 +1537,10 @@ footer {
 	}
 	.sidebar-btn {
 		display: flex;
-		transform: translate(-20px, -50px);
+		transform: translate(0);
+		top: 0;
+		bottom: 0;
+		position: fixed;
 	}
 	.shop-sidebar {
 		display: none;
@@ -1716,15 +1719,27 @@ footer {
 	.specPropositions .slick-track {
 		max-width: 280px;
 	}
-	.header-userBtns {
-		flex-direction: column;
+	.supheader-social {
+		margin-bottom: 30px;
 	}
-	.header-favourite,
-	.header-search {
+	.header-userBtns {
+		top: -40%;
+		right: 20%;
+	}
+	.header-favourite a i,
+	.header-search a i,
+	.header-cart a i,
+	#balance {
 		margin-bottom: 10px;
+		color: #b5b5b5;
+	}
+	.header-cart {
+		margin-bottom: 0;
 	}
 	.header-selectedProducts {
-		left: -270%;
+		left: -20%;
+		position: absolute;
+		z-index: 1000;
 	}
 	.shop-main-title {
 		font-size: 30px;
@@ -1750,5 +1765,8 @@ footer {
 	.midShop-forWomen-right,
 	.midShop-forChild-right {
 		max-width: 230px;
+	}
+	.header-selectedProducts {
+		left: -10%;
 	}
 }
