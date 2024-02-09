@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>XBody</title>
+
+        <!-- Slider -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+        />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="assets/css/general.css" />
+    </head>
+    <body>
+        <div class="supheader">
+            <div class="container">
+                <div class="leftSide">
+                    <div class="langSelect">
+                        <img
+                            src="assets/imgs/engFlag.png"
+                            alt="Flag"
+                            width="16px"
+                        />
+                        <select
+                            onchange="changeFlag()"
+                            class="langSelect-inner"
+                        >
+                            <option selected value="1" class="engLanguage">
+                                <a href="#">English</a>
+                            </option>
+                            <option value="2" class="spaLanguage">
+                                <a href="#">Spanish</a>
+                            </option>
+                            <option value="3" class="gerLanguage">
+                                <a href="#">German</a>
+                            </option>
+                            <option value="4" class="freLanguage">
+                                <a href="#">French</a>
+                            </option>
+                            <option value="5" class="itaLanguage">
+                                <a href="#">Italian</a>
+                            </option>
+                        </select>
+                    </div>
+                    <div class="curSelect">
+                        <select class="currency">
+                            <option value="1" class="currency-usd">
+                                <a href="#">USD / $</a>
+                            </option>
+                            <option value="2" class="currency-GBP">
+                                <a href="#">EUR / €</a>
+                            </option>
+                            <option value="3" class="currency-GBP">
+                                <a href="#">GBP / £</a>
+                            </option>
+                            <option value="4" class="currency-GBP">
+                                <a href="#">CNY / ¥</a>
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="middleSide">
+                    <h1><span>X</span>Body</h1>
+                </div>
+                <div class="rightSide">
+                    <ul class="supheader-social">
+                        <li>
+                            <a href="#"
+                                ><img
+                                    src="assets/imgs/facebook.png"
+                                    alt="Facebook Logo"
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><img
+                                    src="assets/imgs/twitter.png"
+                                    alt="Twitter Logo"
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><img
+                                    src="assets/imgs/googlePlus.png"
+                                    alt="Google+ Logo"
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><img
+                                    src="assets/imgs/in.png"
+                                    alt="LinkedIn Logo"
+                            /></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><img
+                                    src="assets/imgs/instagram.png"
+                                    alt="Instagram Logo"
+                            /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="#" id="homePage">Home Page</a></li>
+                        <li><a href="#" id="aboutUs">About Us</a></li>
+                        <li><a href="#" id="services">Services</a></li>
+                        <li><a href="#" id="eccomerce">Eccomerce</a></li>
+                        <li><a href="#" id="blog">Blog</a></li>
+                        <li><a href="#" id="contactUs">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="header-userBtns">
+                    <div class="header-favourite">
+                        <a href="#">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                    </div>
+                    <div class="header-search">
+                        <a href="#">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </div>
+                    <div class="header-cart">
+                        <a href="#">
+                            <i
+                                class="fa-solid fa-bag-shopping header-bag-shoping"
+                            ></i>
+                        </a>
+
+                        <div class="header-selectedProducts">
+                            <div class="selectedProducts-top">
+                                <h2>Selected Products</h2>
+                            </div>
+                            <div class="selectedProducts">
+                                <div class="selectedProduct">
+                                    <img src="assets/imgs/product-1-shop.png" />
+                                    <div class="selectedProduct-rightSide">
+                                        <p class="selectedProduct-category">
+                                            Casual Organic
+                                        </p>
+                                        <h3>Pure Cosmetic</h3>
+                                        <p class="selectedProduct-price">
+                                            <span>$350</span>$299,99
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="dispNone selectedProduct">
+                                    <img src="assets/imgs/product-2-shop.png" />
+                                    <div class="selectedProduct-rightSide">
+                                        <p class="selectedProduct-category">
+                                            Casual Organic
+                                        </p>
+                                        <h3>Pure Cosmetic</h3>
+                                        <p class="selectedProduct-price">
+                                            <span>$350</span>$299,99
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="selectedProduct">
+                                    <img src="assets/imgs/product-3-shop.png" />
+                                    <div class="selectedProduct-rightSide">
+                                        <p class="selectedProduct-category">
+                                            Casual Organic
+                                        </p>
+                                        <h3>Pure Cosmetic</h3>
+                                        <p class="selectedProduct-price">
+                                            <span>$350</span>$299,99
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="selectedProduct">
+                                    <img
+                                        src="assets/imgs/intro-product-3.png"
+                                    />
+                                    <div class="selectedProduct-rightSide">
+                                        <p class="selectedProduct-category">
+                                            Casual Organic
+                                        </p>
+                                        <h3>Pure Cosmetic</h3>
+                                        <p class="selectedProduct-price">
+                                            <span>$350</span>$299,99
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="selectedProduct">
+                                    <img
+                                        src="assets/imgs/intro-product-1.png"
+                                    />
+                                    <div class="selectedProduct-rightSide">
+                                        <p class="selectedProduct-category">
+                                            Casual Organic
+                                        </p>
+                                        <h3>Pure Cosmetic</h3>
+                                        <p class="selectedProduct-price">
+                                            <span>$350</span>$299,99
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="selectedProduct">
+                                    <img src="assets/imgs/specProduct-2.png" />
+                                    <div class="selectedProduct-rightSide">
+                                        <p class="selectedProduct-category">
+                                            Casual Organic
+                                        </p>
+                                        <h3>Pure Cosmetic</h3>
+                                        <p class="selectedProduct-price">
+                                            <span>$350</span>$299,99
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span id="balance">$0.00</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="intro">
+            <div class="intro-inner introInner1">
+                <img src="assets/imgs/intro-bg.png" draggable="false" />
+                <img
+                    class="intro-description-bg"
+                    src="assets/imgs/introDescr.png"
+                    draggable="false"
+                />
+                <div class="container">
+                    <p>Natural Collection</p>
+                    <h2>Body Care</h2>
+                    <p class="intro-desc-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do labore et<br />dolore magna aliqua.
+                    </p>
+                    <button class="intro-desc-btn">Add to bag</button>
+                </div>
+                <img
+                    class="intro-product"
+                    src="assets/imgs/intro-product-1.png"
+                    alt="Product Image"
+                />
+            </div>
+            <div class="intro-inner introInner2">
+                <img src="assets/imgs/intro-bg-2.jpg" draggable="false" />
+                <img
+                    class="intro-description-bg"
+                    src="assets/imgs/introDescr-2.png"
+                    draggable="false"
+                />
+                <div class="container">
+                    <p>Natural Collection</p>
+                    <h2>Body Care</h2>
+                    <p class="intro-desc-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do labore et<br />dolore magna aliqua.
+                    </p>
+                    <button class="intro-desc-btn">Add to bag</button>
+                </div>
+                <img
+                    class="intro-product"
+                    src="assets/imgs/intro-product-2.png"
+                    alt="Product Image"
+                />
+            </div>
+            <div class="intro-inner introInner3">
+                <img src="assets/imgs/intro-bg-3.jpg" draggable="false" />
+                <img
+                    class="intro-description-bg"
+                    src="assets/imgs/introDescr-3.png"
+                    draggable="false"
+                />
+                <div class="container">
+                    <p>Natural Collection</p>
+                    <h2>Body Care</h2>
+                    <p class="intro-desc-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do labore et<br />dolore magna aliqua.
+                    </p>
+                    <button class="intro-desc-btn">Add to bag</button>
+                </div>
+                <img
+                    class="intro-product"
+                    src="assets/imgs/intro-product-3.png"
+                    alt="Product Image"
+                />
+            </div>
+            <div class="intro-inner introInner4">
+                <img src="assets/imgs/intro-bg-4.jpg" draggable="false" />
+                <img
+                    class="intro-description-bg"
+                    src="assets/imgs/introDescr-4.png"
+                    draggable="false"
+                />
+                <div class="container">
+                    <p>Natural Collection</p>
+                    <h2>Body Care</h2>
+                    <p class="intro-desc-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do labore et<br />dolore magna aliqua.
+                    </p>
+                    <button class="intro-desc-btn">Add to bag</button>
+                </div>
+                <img
+                    class="intro-product"
+                    src="assets/imgs/intro-product-4.png"
+                    alt="Product Image"
+                />
+            </div>
+        </div>
+        <secction class="shop">
+            <div class="container">
+                <div class="sidebar-btn" id="sidebar-btn">
+                    <i class="fa fa-solid fa-bars"></i>
+                    <a>Menu</a>
+                </div>
+                <aside class="shop-sidebar" id="shop-sidebar">
+                    <nav class="sidebar-nav">
+                        <ul>
+                            <li><a href="#" id="homePage">Home Page</a></li>
+                            <li><a href="#" id="aboutUs">About Us</a></li>
+                            <li><a href="#" id="services">Services</a></li>
+                            <li><a href="#" id="eccomerce">Eccomerce</a></li>
+                            <li><a href="#" id="blog">Blog</a></li>
+                            <li><a href="#" id="contactUs">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    <div class="shop-asideCat">
+                        <h3>Categories</h3>
+                        <ul class="shop-categories-ul">
+                            <li>
+                                <button class="accordion">Vitamins</button
+                                ><i class="fa-solid fa-angle-down"></i>
+                                <div class="shop-li-sublist">
+                                    <p>some<br />content</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="accordion">Cough&Gold</button
+                                ><i class="fa-solid fa-angle-down"></i>
+                                <div class="shop-li-sublist">
+                                    <p>some<br />content</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="accordion">Baby&Children</button
+                                ><i class="fa-solid fa-angle-down"></i>
+                                <div class="shop-li-sublist">
+                                    <p>some<br />content</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="accordion">First Aid</button
+                                ><i class="fa-solid fa-angle-down"></i>
+                                <div class="shop-li-sublist">
+                                    <p>some<br />content</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="accordion">Oracle Care</button
+                                ><i class="fa-solid fa-angle-down"></i>
+                                <div class="shop-li-sublist">
+                                    <p>some<br />content</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="accordion">Skin care</button
+                                ><i class="fa-solid fa-angle-down"></i>
+                                <div class="shop-li-sublist">
+                                    <p>some<br />content</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="accordion">Pain</button
+                                ><i class="fa-solid fa-angle-down"></i>
+                                <div class="shop-li-sublist">
+                                    <p>some<br />content</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="accordion">Vitamins</button
+                                ><i class="fa-solid fa-angle-down"></i>
+                                <div class="shop-li-sublist">
+                                    <p>some<br />content</p>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="accordion">Cough&Gold</button
+                                ><i class="fa-solid fa-angle-down"></i>
+                                <div class="shop-li-sublist">
+                                    <p>some<br />content</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="shop-asideSpec">
+                        <h3>Special</h3>
+                        <div
+                            class="shop-asideSpec-products"
+                            id="shop-asideSpec-products1"
+                        >
+                            <div class="asideSpec-product">
+                                <div class="asideSpec-product-wrapper">
+                                    <img
+                                        src="assets/imgs/product_1.png"
+                                        alt="Product photo"
+                                    />
+                                    <div class="asideSpec-product-info">
+                                        <h4>Pure cosmetic</h4>
+                                        <img
+                                            src="assets/imgs/4stars.png"
+                                            alt="Product mark"
+                                        />
+                                        <p class="asideSpec-product-price">
+                                            <span>$350</span> $299,99
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="asideSpec-product">
+                                <div class="asideSpec-product-wrapper">
+                                    <img
+                                        src="assets/imgs/product_2.png"
+                                        alt="Product photo"
+                                    />
+                                    <div class="asideSpec-product-info">
+                                        <h4>Pure cosmetic</h4>
+                                        <img
+                                            src="assets/imgs/4stars.png"
+                                            alt="Product mark"
+                                        />
+                                        <p class="asideSpec-product-price">
+                                            <span>$350</span> $299,99
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="shop-asideSpec-products"
+                            id="shop-asideSpec-products2"
+                        >
+                            <div class="asideSpec-product">
+                                <div class="asideSpec-product-wrapper">
+                                    <img
+                                        src="assets/imgs/product_2.png"
+                                        alt="Product photo"
+                                    />
+                                    <div class="asideSpec-product-info">
+                                        <h4>Pure cosmetic</h4>
+                                        <img
+                                            src="assets/imgs/4stars.png"
+                                            alt="Product mark"
+                                        />
+                                        <p class="asideSpec-product-price">
+                                            <span>$350</span> $299,99
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="asideSpec-product">
+                                <div class="asideSpec-product-wrapper">
+                                    <img
+                                        src="assets/imgs/product_1.png"
+                                        alt="Product photo"
+                                    />
+                                    <div class="asideSpec-product-info">
+                                        <h4>Pure cosmetic</h4>
+                                        <img
+                                            src="assets/imgs/4stars.png"
+                                            alt="Product mark"
+                                        />
+                                        <p class="asideSpec-product-price">
+                                            <span>$350</span> $299,99
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-left-banner">
+                        <img
+                            src="assets/imgs/left-banner.png"
+                            alt="Shop Left Banner Image"
+                            draggable="false"
+                        />
+                    </div>
+                    <div class="shop-left-testimonials">
+                        <h3>Testimonials</h3>
+                        <div class="testimonials">
+                            <div class="testimonial">
+                                <div class="testimonial-wrapper">
+                                    <div class="testimonial-info">
+                                        <p>
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit, sed do
+                                            eiusmod tempor incididunt ut labore
+                                            et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-user">
+                                        <img
+                                            src="assets/imgs/testimonials-user1.png"
+                                            alt="Julia Smith"
+                                        />
+                                        <h4>Julia Smith</h4>
+                                        <p class="testimonials-job">
+                                            Web Designer
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial">
+                                <div class="testimonial-wrapper">
+                                    <div class="testimonial-info">
+                                        <p>
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit, sed do
+                                            eiusmod tempor incididunt ut labore
+                                            et dolore magna aliqua.
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-user">
+                                        <img
+                                            src="assets/imgs/testimonials-user1.png"
+                                            alt="Julia Smith"
+                                        />
+                                        <h4>Julia Smith</h4>
+                                        <p class="testimonials-job">
+                                            Web Designer
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <main class="shop-main">
+                    <div class="topShop" id="topShop">
+                        <div class="shMain-top">
+                            <h2 class="shop-main-title">Our Products</h2>
+                            <p class="shop-main-desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                            </p>
+                        </div>
+                        <div class="shMain-categories">
+                            <ul class="shop-categories" id="shop-categories">
+                                <li class="shop-categ-active">
+                                    <a
+                                        name="feautured"
+                                        onclick="categChange(this)"
+                                        >Feautured products</a
+                                    >
+                                </li>
+                                <li>
+                                    <a name="new" onclick="categChange(this)"
+                                        >New Products</a
+                                    >
+                                </li>
+                                <li>
+                                    <a name="best" onclick="categChange(this)"
+                                        >Best Seller</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="shMain-content">
+                            <div
+                                class="featured-products"
+                                id="featured-products"
+                            >
+                                <div class="shMain-products">
+                                    <div class="shMain-product">
+                                        <img
+                                            src="assets/imgs/product-1-shop.png"
+                                            alt="Product Image"
+                                        />
+                                        <div class="shMain-product-info">
+                                            <p>Casual Organic</p>
+                                            <h3>Pure Cosmetic</h3>
+                                            <img
+                                                src="assets/imgs/4stars.png"
+                                                alt="Product Mark: 4/5 stars"
+                                            />
+                                            <p class="shop-product-price">
+                                                <span>$350</span>$299,99
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="shMain-product">
+                                        <img
+                                            src="assets/imgs/product-2-shop.png"
+                                            alt="Product Image"
+                                        />
+                                        <div class="shMain-product-info">
+                                            <p>Casual Organic</p>
+                                            <h3>Pure Cosmetic</h3>
+                                            <img
+                                                src="assets/imgs/4stars.png"
+                                                alt="Product Mark: 4/5 stars"
+                                            />
+                                            <p class="shop-product-price">
+                                                <span>$350</span>$299,99
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="shMain-product">
+                                        <img
+                                            src="assets/imgs/product-3-shop.png"
+                                            alt="Product Image"
+                                        />
+                                        <div class="shMain-product-info">
+                                            <p>Casual Organic</p>
+                                            <h3>Pure Cosmetic</h3>
+                                            <img
+                                                src="assets/imgs/4stars.png"
+                                                alt="Product Mark: 4/5 stars"
+                                            />
+                                            <p class="shop-product-price">
+                                                <span>$350</span>$299,99
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="new-products" id="new-products">
+                                <div class="shMain-products">
+                                    <div class="shMain-product">
+                                        <img
+                                            src="assets/imgs/product-3-shop.png"
+                                            alt="Product Image"
+                                        />
+                                        <div class="shMain-product-info">
+                                            <p>Casual Organic</p>
+                                            <h3>Pure Cosmetic</h3>
+                                            <img
+                                                src="assets/imgs/4stars.png"
+                                                alt="Product Mark: 4/5 stars"
+                                            />
+                                            <p class="shop-product-price">
+                                                <span>$350</span>$299,99
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="shMain-product">
+                                        <img
+                                            src="assets/imgs/product-2-shop.png"
+                                            alt="Product Image"
+                                        />
+                                        <div class="shMain-product-info">
+                                            <p>Casual Organic</p>
+                                            <h3>Pure Cosmetic</h3>
+                                            <img
+                                                src="assets/imgs/4stars.png"
+                                                alt="Product Mark: 4/5 stars"
+                                            />
+                                            <p class="shop-product-price">
+                                                <span>$350</span>$299,99
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="best-seller" id="best-seller">
+                                <div class="shMain-products">
+                                    <div class="shMain-product">
+                                        <img
+                                            src="assets/imgs/product-3-shop.png"
+                                            alt="Product Image"
+                                        />
+                                        <div class="shMain-product-info">
+                                            <p>Casual Organic</p>
+                                            <h3>Pure Cosmetic</h3>
+                                            <img
+                                                src="assets/imgs/4stars.png"
+                                                alt="Product Mark: 4/5 stars"
+                                            />
+                                            <p class="shop-product-price">
+                                                <span>$350</span>$299,99
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="shMain-product">
+                                        <img
+                                            src="assets/imgs/product-1-shop.png"
+                                            alt="Product Image"
+                                        />
+                                        <div class="shMain-product-info">
+                                            <p>Casual Organic</p>
+                                            <h3>Pure Cosmetic</h3>
+                                            <img
+                                                src="assets/imgs/4stars.png"
+                                                alt="Product Mark: 4/5 stars"
+                                            />
+                                            <p class="shop-product-price">
+                                                <span>$350</span>$299,99
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="midShop">
+                        <div class="midShop-forWomen">
+                            <div class="midShop-forWomen-left">
+                                <p>Casual Organic</p>
+                                <h3>For Women</h3>
+                                <button>View all</button>
+                            </div>
+                            <img
+                                class="midShop-forWomen-right"
+                                src="assets/imgs/women-bg.png"
+                            />
+                        </div>
+                        <div class="midShop-forChild">
+                            <div class="midShop-forChild-left">
+                                <p>Casual Organic</p>
+                                <h3>For Children</h3>
+                                <button>View all</button>
+                            </div>
+                            <img
+                                class="midShop-forChild-right"
+                                src="assets/imgs/child-bg.png"
+                            />
+                        </div>
+                    </div>
+                    <div class="bottomShop">
+                        <div class="btmShop-header">
+                            <h2 class="btmShop-header-title">
+                                Special Products
+                            </h2>
+                            <p class="btmShop-header-desc">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                            </p>
+                        </div>
+                        <div class="container">
+                            <div class="btmShop-products">
+                                <div class="btmShop-product">
+                                    <div class="btmShop-product-leftSide">
+                                        <img
+                                            src="assets/imgs/specProduct-1.png"
+                                            alt="Product Image"
+                                        />
+                                    </div>
+                                    <div class="btmShop-product-rightSide">
+                                        <p class="bShop-product-categ">
+                                            Casual Organic
+                                        </p>
+                                        <h3>Pure Cosmetic</h3>
+                                        <img
+                                            src="assets/imgs/4stars.png"
+                                            alt="4/5 stars"
+                                        />
+                                        <p class="bShop-product-price">
+                                            <span>$350</span>$299,99
+                                        </p>
+                                        <p class="bShop-product-desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit, sed do
+                                            eiusmod tempor incididunt ut
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="btmShop-product">
+                                    <div class="bShop-new">New</div>
+                                    <div class="btmShop-product-leftSide">
+                                        <img
+                                            src="assets/imgs/specProduct-2.png"
+                                            alt="Product Image"
+                                        />
+                                    </div>
+                                    <div class="btmShop-product-rightSide">
+                                        <p class="bShop-product-categ">
+                                            Casual Organic
+                                        </p>
+                                        <h3>Pure Cosmetic</h3>
+                                        <img
+                                            src="assets/imgs/4stars.png"
+                                            alt="4/5 stars"
+                                        />
+                                        <p class="bShop-product-price">
+                                            <span>$350</span>$299,99
+                                        </p>
+                                        <p class="bShop-product-desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit, sed do
+                                            eiusmod tempor incididunt ut
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="btmShop-product">
+                                    <div class="btmShop-product-leftSide">
+                                        <img
+                                            src="assets/imgs/specProduct-3.png"
+                                            alt="Product Image"
+                                        />
+                                    </div>
+                                    <div class="btmShop-product-rightSide">
+                                        <p class="bShop-product-categ">
+                                            Casual Organic
+                                        </p>
+                                        <h3>Pure Cosmetic</h3>
+                                        <img
+                                            src="assets/imgs/4stars.png"
+                                            alt="4/5 stars"
+                                        />
+                                        <p class="bShop-product-price">
+                                            <span>$350</span>$299,99
+                                        </p>
+                                        <p class="bShop-product-desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit, sed do
+                                            eiusmod tempor incididunt ut
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="btmShop-product">
+                                    <div class="btmShop-product-leftSide">
+                                        <img
+                                            src="assets/imgs/product-1-shop.png"
+                                            alt="Product Image"
+                                        />
+                                    </div>
+                                    <div class="btmShop-product-rightSide">
+                                        <p class="bShop-product-categ">
+                                            Casual Organic
+                                        </p>
+                                        <h3>Pure Cosmetic</h3>
+                                        <img
+                                            src="assets/imgs/4stars.png"
+                                            alt="4/5 stars"
+                                        />
+                                        <p class="bShop-product-price">
+                                            <span>$350</span>$299,99
+                                        </p>
+                                        <p class="bShop-product-desc">
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit, sed do
+                                            eiusmod tempor incididunt ut
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </secction>
+        <section class="brands">
+            <div class="container">
+                <ul class="brands-list">
+                    <li>
+                        <a href="#"
+                            ><img src="assets/imgs/bloom.png" alt="Bloom"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img src="assets/imgs/monster.png" alt="Monster"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                src="assets/imgs/silvStone.png"
+                                alt="Silver stone"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img src="assets/imgs/winston.png" alt="Winston"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img src="assets/imgs/mangler.png" alt="Mangler"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img src="assets/imgs/modes.png" alt="Modes"
+                        /></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="specPropositionSection">
+            <div class="container">
+                <div class="specProposSection-header">
+                    <h2>Special Proposition</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore<br />magna aliqua. Ut enim add exercitation
+                        ullamco.
+                    </p>
+                </div>
+                <div class="specPropositions">
+                    <div class="specPropos">
+                        <div class="specPropos-wrapper">
+                            <div class="specPropos-leftSide">
+                                <img
+                                    src="assets/imgs/specPropos-1.png"
+                                    alt="Product Image"
+                                />
+                            </div>
+                            <div class="specPropos-rightSide">
+                                <p class="specPropos-categ">Casual Organic</p>
+                                <h3>Pure Cosmetic</h3>
+                                <img
+                                    src="assets/imgs/4stars.png"
+                                    alt="4/5 stars"
+                                />
+                                <p class="specPropos-price">
+                                    <span>$350</span> $299,99
+                                </p>
+                                <p class="specPropos-desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut
+                                </p>
+                                <div class="specPropos-timer">
+                                    <div class="specPropos-timer-days">
+                                        <h4>06</h4>
+                                        <p>Days</p>
+                                    </div>
+                                    <div class="specPropos-timer-hours">
+                                        <h4>35</h4>
+                                        <p>Hours</p>
+                                    </div>
+                                    <div class="specPropos-timer-minutes">
+                                        <h4>23</h4>
+                                        <p>Minutes</p>
+                                    </div>
+                                    <div class="specPropos-timer-seconds">
+                                        <h4>05</h4>
+                                        <p>Seconds</p>
+                                    </div>
+                                </div>
+                                <button class="specPropos-btn">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specPropos">
+                        <div class="specPropos-wrapper">
+                            <div class="specPropos-leftSide">
+                                <img
+                                    src="assets/imgs/specPropos-2.png"
+                                    alt="Product Image"
+                                />
+                            </div>
+                            <div class="specPropos-rightSide">
+                                <p class="specPropos-categ">Casual Organic</p>
+                                <h3>Pure Cosmetic</h3>
+                                <img
+                                    src="assets/imgs/4stars.png"
+                                    alt="4/5 stars"
+                                />
+                                <p class="specPropos-price">
+                                    <span>$350</span> $299,99
+                                </p>
+                                <p class="specPropos-desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut
+                                </p>
+                                <div class="specPropos-timer">
+                                    <div class="specPropos-timer-days">
+                                        <h4>06</h4>
+                                        <p>Days</p>
+                                    </div>
+                                    <div class="specPropos-timer-hours">
+                                        <h4>35</h4>
+                                        <p>Hours</p>
+                                    </div>
+                                    <div class="specPropos-timer-minutes">
+                                        <h4>23</h4>
+                                        <p>Minutes</p>
+                                    </div>
+                                    <div class="specPropos-timer-seconds">
+                                        <h4>05</h4>
+                                        <p>Seconds</p>
+                                    </div>
+                                </div>
+                                <button class="specPropos-btn">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specPropos">
+                        <div class="specPropos-wrapper">
+                            <div class="specPropos-leftSide">
+                                <img
+                                    src="assets/imgs/specPropos-1.png"
+                                    alt="Product Image"
+                                />
+                            </div>
+                            <div class="specPropos-rightSide">
+                                <p class="specPropos-categ">Casual Organic</p>
+                                <h3>Pure Cosmetic</h3>
+                                <img
+                                    src="assets/imgs/4stars.png"
+                                    alt="4/5 stars"
+                                />
+                                <p class="specPropos-price">
+                                    <span>$350</span> $299,99
+                                </p>
+                                <p class="specPropos-desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut
+                                </p>
+                                <div class="specPropos-timer">
+                                    <div class="specPropos-timer-days">
+                                        <h4>06</h4>
+                                        <p>Days</p>
+                                    </div>
+                                    <div class="specPropos-timer-hours">
+                                        <h4>35</h4>
+                                        <p>Hours</p>
+                                    </div>
+                                    <div class="specPropos-timer-minutes">
+                                        <h4>23</h4>
+                                        <p>Minutes</p>
+                                    </div>
+                                    <div class="specPropos-timer-seconds">
+                                        <h4>05</h4>
+                                        <p>Seconds</p>
+                                    </div>
+                                </div>
+                                <button class="specPropos-btn">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specPropos">
+                        <div class="specPropos-wrapper">
+                            <div class="specPropos-leftSide">
+                                <img
+                                    src="assets/imgs/specPropos-2.png"
+                                    alt="Product Image"
+                                />
+                            </div>
+                            <div class="specPropos-rightSide">
+                                <p class="specPropos-categ">Casual Organic</p>
+                                <h3>Pure Cosmetic</h3>
+                                <img
+                                    src="assets/imgs/4stars.png"
+                                    alt="4/5 stars"
+                                />
+                                <p class="specPropos-price">
+                                    <span>$350</span> $299,99
+                                </p>
+                                <p class="specPropos-desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua.
+                                    Ut
+                                </p>
+                                <div class="specPropos-timer">
+                                    <div class="specPropos-timer-days">
+                                        <h4>06</h4>
+                                        <p>Days</p>
+                                    </div>
+                                    <div class="specPropos-timer-hours">
+                                        <h4>35</h4>
+                                        <p>Hours</p>
+                                    </div>
+                                    <div class="specPropos-timer-minutes">
+                                        <h4>23</h4>
+                                        <p>Minutes</p>
+                                    </div>
+                                    <div class="specPropos-timer-seconds">
+                                        <h4>05</h4>
+                                        <p>Seconds</p>
+                                    </div>
+                                </div>
+                                <button class="specPropos-btn">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer-inner">
+                    <div class="footer-aboutUs">
+                        <h1><span>X</span>Body</h1>
+                        <p class="footer-aboutUs-desc">
+                            Lorem ipsum dolor sit amet, consectetur<br />adipiscing
+                            elit, sed do eiusmod lorem.
+                        </p>
+                        <p class="footer-aboutUs-info">
+                            48 Park Avenue,<br />
+                            East 21st Street, Apt. 304<br />
+                            New York NY 10016<br />
+                            Email:
+                            <a href="mailto:youremail@site.com"
+                                >youremail@site.com</a
+                            ><br />
+                            Phone: <a href="tel:14089961010">+1 408 996 1010</a>
+                        </p>
+                    </div>
+                    <div class="footer-usefulLinks">
+                        <h2>Useful links</h2>
+                        <ul>
+                            <li><a href="#">Home Page</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Delivery Info</a></li>
+                            <li><a href="#">Conditions</a></li>
+                            <li><a href="#">Order Tracking</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">My Wishlist</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-latestPost-section">
+                        <h2>Latest Post</h2>
+                        <div class="footer-latestPosts">
+                            <div class="footer-latestPost">
+                                <div class="footer-latestPost-leftSide">
+                                    <a href="#">
+                                        <img
+                                            src="assets/imgs/footer-product-1.png"
+                                            alt="Latest Post Image"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="footer-latestPost-rightSide">
+                                    <a href="#">
+                                        <h3>Terapeutic</h3>
+                                        <p>Balance diet facts unleshed</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="footer-latestPost">
+                                <div class="footer-latestPost-leftSide">
+                                    <a href="#">
+                                        <img
+                                            src="assets/imgs/footer-product-2.png"
+                                            alt="Latest Post Image"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="footer-latestPost-rightSide">
+                                    <a href="#">
+                                        <h3>Terapeutic</h3>
+                                        <p>Balance diet facts unleshed</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="footer-latestPost">
+                                <div class="footer-latestPost-leftSide">
+                                    <a href="#">
+                                        <img
+                                            src="assets/imgs/footer-product-1.png"
+                                            alt="Latest Post Image"
+                                        />
+                                    </a>
+                                </div>
+                                <div class="footer-latestPost-rightSide">
+                                    <a href="#">
+                                        <h3>Terapeutic</h3>
+                                        <p>Balance diet facts unleshed</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-social">
+                        <div class="footer-subscribe-section">
+                            <h2>Subscribe</h2>
+                            <p>
+                                You can always up to date with our company news
+                            </p>
+                            <div class="subscribe-email">
+                                <input
+                                    type="email"
+                                    placeholder="Email address..."
+                                /><button>+</button>
+                            </div>
+                            <p>
+                                *Don't worry, we don't spam our customers
+                                mailboxes
+                            </p>
+                        </div>
+                        <div class="footer-followUs">
+                            <h2>Follow us</h2>
+                            <ul class="footer-folowUs-social">
+                                <li>
+                                    <a href="#"
+                                        ><img
+                                            src="assets/imgs/facebook.png"
+                                            alt="Facebook"
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><img
+                                            src="assets/imgs/twitter.png"
+                                            alt="Twitter"
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><img
+                                            src="assets/imgs/googlePlus.png"
+                                            alt="Google Plus"
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><img
+                                            src="assets/imgs/in.png"
+                                            alt="LinkedIn"
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><img
+                                            src="assets/imgs/instagram.png"
+                                            alt="Instagram"
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><img
+                                            src="assets/imgs/pinterest.png"
+                                            alt="Pinterest"
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><img
+                                            src="assets/imgs/skype.png"
+                                            alt="Skype"
+                                    /></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+
+        <!-- FontAwesome -->
+        <script
+            src="https://kit.fontawesome.com/388209ea92.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Slider -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+        <script>
+            const intro_slider = tns({
+                container: ".intro",
+                items: 1,
+                axis: "vertical",
+                swipeAngle: false,
+                speed: 400,
+                controls: false,
+                nav: false,
+                mouseDrag: true,
+                autoplay: true,
+                autoplayButtonOutput: false,
+                autoplayTimeout: 7000,
+            });
+            const asideSpec1_slider = tns({
+                container: "#shop-asideSpec-products1",
+                items: 1,
+                slideBy: 1,
+                swipeAngle: false,
+                speed: 400,
+                controls: false,
+                nav: false,
+                mouseDrag: true,
+                autoplay: true,
+                autoplayButtonOutput: false,
+                autoplayTimeout: 1500,
+            });
+            const asideSpec2_slider = tns({
+                container: "#shop-asideSpec-products2",
+                items: 1,
+                slideBy: 1,
+                swipeAngle: false,
+                speed: 400,
+                controls: false,
+                nav: false,
+                mouseDrag: true,
+                autoplay: true,
+                autoplayButtonOutput: false,
+                autoplayTimeout: 1500,
+            });
+            const testimonials_slider = tns({
+                container: ".testimonials",
+                items: 1,
+                swipeAngle: false,
+                speed: 400,
+                controls: false,
+                nav: false,
+                mouseDrag: true,
+                autoplay: true,
+                autoplayButtonOutput: false,
+                autoplayTimeout: 1500,
+            });
+
+            const windowInnerWidth = window.innerWidth;
+            if (windowInnerWidth <= 1223) {
+                specProp_slider = tns({
+                    container: ".specPropositions",
+                    items: 2,
+                    slideBy: 1,
+                    swipeAngle: false,
+                    speed: 400,
+                    controls: false,
+                    mouseDrag: true,
+                    autoplay: true,
+                    autoplayButtonOutput: false,
+                    autoplayTimeout: 3000,
+                    axis: "vertical",
+                    navPosition: "bottom",
+                    navAsThumbnails: true
+                });
+                const specPropos =
+                    document.getElementsByClassName("specPropos");
+                for (let item of specPropos) {
+                    item.style.margin = "0px 0px 50px 0px";
+                }
+            } else {
+                let specProp_slider = tns({
+                    container: ".specPropositions",
+                    items: 2,
+                    slideBy: 1,
+                    swipeAngle: false,
+                    speed: 400,
+                    controls: false,
+                    mouseDrag: true,
+                    autoplay: true,
+                    autoplayButtonOutput: false,
+                    autoplayTimeout: 3000,
+                    navPosition: "bottom",
+                    navAsThumbnails: true
+                });
+            }
+        </script>
+
+        <!-- Shop's Sidebar Accordion -->
+        <script src="assets/js/shopAccordion.js"></script>
+
+        <!-- Shop categories function -->
+        <script src="assets/js/shop-categories.js"></script>
+
+        <!-- Shop sidebar function -->
+        <script src="assets/js/shop--sidebar.js"></script>
+
+        <!-- Supheader flag change script -->
+        <script src="assets/js/changingFlag.js"></script>
+    </body>
+</html>
