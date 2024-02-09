@@ -181,6 +181,10 @@ header .container {
 
 /*Intro*/
 
+.intro {
+	margin-bottom: 40px;
+}
+
 .intro-inner,
 .intro-inner img:nth-child(1) {
 	width: 100% !important;
